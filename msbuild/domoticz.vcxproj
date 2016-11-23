@@ -411,6 +411,7 @@
     <ClInclude Include="..\hardware\AnnaThermostat.h" />
     <ClInclude Include="..\hardware\ASyncTCP.h" />
     <ClInclude Include="..\hardware\AtagOne.h" />
+    <ClInclude Include="..\hardware\AtagOneV2Plugin.h" />
     <ClInclude Include="..\hardware\Comm5Serial.h" />
     <ClInclude Include="..\hardware\Comm5TCP.h" />
     <ClInclude Include="..\hardware\csocket.h" />
@@ -522,6 +523,7 @@
     <ClInclude Include="..\hardware\P1MeterTCP.h" />
     <ClInclude Include="..\main\Logger.h" />
     <ClInclude Include="..\main\LuaHandler.h" />
+    <ClInclude Include="..\main\MACAddressUtility.h" />
     <ClInclude Include="..\main\mainstructs.h" />
     <ClInclude Include="..\main\unzip.h" />
     <ClInclude Include="..\main\unzip_iterator.h" />
@@ -634,6 +636,8 @@
     <ClCompile Include="..\hardware\ASyncSerial.cpp" />
     <ClCompile Include="..\hardware\ASyncTCP.cpp" />
     <ClCompile Include="..\hardware\AtagOne.cpp" />
+    <ClCompile Include="..\hardware\AtagOneV2Plugin.cpp" />
+    <ClCompile Include="..\hardware\AtagOneV2Local.cpp" />
     <ClCompile Include="..\hardware\Comm5Serial.cpp" />
     <ClCompile Include="..\hardware\Comm5TCP.cpp" />
     <ClCompile Include="..\hardware\csocket.cpp" />
@@ -742,6 +746,7 @@
     <ClCompile Include="..\hardware\P1MeterTCP.cpp" />
     <ClCompile Include="..\main\Logger.cpp" />
     <ClCompile Include="..\main\LuaHandler.cpp" />
+    <ClCompile Include="..\main\MACAddressUtility.cpp" />
     <ClCompile Include="..\main\Scheduler.cpp" />
     <ClCompile Include="..\main\SQLHelper.cpp" />
     <ClCompile Include="..\main\Helper.cpp" />

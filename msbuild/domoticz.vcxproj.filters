@@ -449,8 +449,9 @@
     </Filter>
     <Filter Include="Devices\YeeLight">
       <UniqueIdentifier>{40997df4-ca83-46d7-ae42-d23049f98a0b}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
+    </Filter>    <Filter Include="Devices\AtagOneV2">
+      <UniqueIdentifier>{195ace3c-c16c-4fb3-baec-8afc830b317b}</UniqueIdentifier>
+    </Filter>  </ItemGroup>
   <ItemGroup>
     <None Include="..\CMakeLists.txt">
       <Filter>crosscompile</Filter>
@@ -1932,8 +1933,12 @@
     </ClInclude>
     <ClInclude Include="..\hardware\Yeelight.h">
       <Filter>Devices\YeeLight</Filter>
+    </ClInclude>    <ClInclude Include="..\main\MACAddressUtility.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
-  </ItemGroup>
+    <ClInclude Include="..\hardware\AtagOneV2Plugin.h">
+      <Filter>Devices\AtagOneV2</Filter>
+    </ClInclude>  </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\webserver\Base64.cpp">
       <Filter>Webserver</Filter>
@@ -2543,8 +2548,15 @@
     </ClCompile>
     <ClCompile Include="..\hardware\Yeelight.cpp">
       <Filter>Devices\YeeLight</Filter>
+    <ClCompile Include="..\main\MACAddressUtility.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
+    <ClCompile Include="..\hardware\AtagOneV2Local.cpp">
+      <Filter>Devices\AtagOneV2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\hardware\AtagOneV2Plugin.cpp">
+      <Filter>Devices\AtagOneV2</Filter>
+    </ClCompile>  </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="domoticz.rc">
       <Filter>Windows</Filter>

@@ -11,6 +11,8 @@
 #ifndef HTTP_REQUEST_HANDLER_HPP
 #define HTTP_REQUEST_HANDLER_HPP
 
+#define WEBSERVER_DONT_USE_ZIP
+
 #include <string>
 #include <vector>
 #include <boost/noncopyable.hpp>

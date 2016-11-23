@@ -108,6 +108,10 @@
 #include "../hardware/ZiBlueTCP.h"
 #include "../hardware/Yeelight.h"
 
+
+
+#include "../hardware/AtagOneV2Plugin.h"
+
 // load notifications configuration
 #include "../notifications/NotificationHelper.h"
 
@@ -802,8 +806,9 @@ bool MainWorker::AddHardwareFromParams(
 	case HTYPE_MultiFun:
 		//MultiFun LAN
 		pHardware = new MultiFun(ID, Address, Port);
-		break;
-#ifndef WIN32
+		break;	case HTYPE_ATagOneV2:
+		pHardware = new CAtagOneV2Plugin(ID, Mode1);
+		break;#ifndef WIN32
 	case HTYPE_TE923:
 		//TE923 compatible weather station
 #ifdef WITH_LIBUSB
